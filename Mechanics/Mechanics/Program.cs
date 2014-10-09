@@ -28,7 +28,7 @@ namespace Mechanics
             Champion = new Champion();
             var BaseType = Champion.GetType();
 
-            var championName = ObjectManager.Player.ChampionName;
+            var championName = ObjectManager.Player.ChampionName.ToLowerInvariant();
 
             switch (championName)
             {
