@@ -200,16 +200,21 @@ namespace Mechanics
                                         newtarget = target;
                                     }
                                     break;
-                                case TargetingMode.LessAttack:
-                                    if ((target.Health - DamageLib.CalcPhysicalDmg(target.Health, target)) <
-                                        (newtarget.Health - DamageLib.CalcPhysicalDmg(newtarget.Health, newtarget)))
-                                    {
-                                        newtarget = target;
-                                    }
+                               case TargetingMode.LessAttack:
+                                   if ((target.Health -
+                                        ObjectManager.Player.CalcDamage(target, Damage.DamageType.Physical, target.Health) <
+                                        (newtarget.Health -
+                                        ObjectManager.Player.CalcDamage(
+                                            newtarget, Damage.DamageType.Physical, newtarget.Health))))
+                                {
+                                      newtarget = target;
+                                }
                                     break;
                                 case TargetingMode.LessCast:
-                                    if ((target.Health - DamageLib.CalcMagicDmg(target.Health, target)) <
-                                        (target.Health - DamageLib.CalcMagicDmg(newtarget.Health, newtarget)))
+                                    ObjectManager.Player.CalcDamage(target, Damage.DamageType.Magical, target.Health) <
+                                        (newtarget.Health -
+                                        ObjectManager.Player.CalcDamage(
+                                            newtarget, Damage.DamageType.Magical, newtarget.Health))))
                                     {
                                         newtarget = target;
                                     }
