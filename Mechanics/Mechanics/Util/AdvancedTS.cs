@@ -546,10 +546,10 @@ namespace Mechanics
                     switch (damageType)
                     {
                         case DamageType.Magical:
-                            damage = (float)DamageLib.CalcMagicDmg(100, hero);
+                            damage = (float) ObjectManager.Player.CalcDamage(hero, Damage.DamageType.Physical, 100);
                             break;
                         case DamageType.Physical:
-                            damage = (float)DamageLib.CalcPhysicalDmg(100, hero);
+                            damage = (float) ObjectManager.Player.CalcDamage(hero, Damage.DamageType.Physical, 100);
                             break;
                         case DamageType.True:
                             damage = 100;
