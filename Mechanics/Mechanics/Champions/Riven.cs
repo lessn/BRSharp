@@ -301,7 +301,7 @@ namespace Mechanics
             }
         }
 
-        private void OnAnimation(Obj_AI_Base sender, GameObjectPlayAnimationEventArgs args)
+        private void OnAnimation(LeagueSharp.GameObject sender, GameObjectPlayAnimationEventArgs args)
         {
             if (Orbwalking.OrbwalkingMode.Combo != Program.Champion.Orbwalker.ActiveMode ||
                 !Program.Menu.Item("use_UC").GetValue<bool>())
