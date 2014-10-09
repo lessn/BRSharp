@@ -211,10 +211,11 @@ namespace Mechanics
                                 }
                                     break;
                                 case TargetingMode.LessCast:
-                                    ObjectManager.Player.CalcDamage(target, Damage.DamageType.Magical, target.Health) <
+                                    if ((target.Health -
+                                         ObjectManager.Player.CalcDamage(target, Damage.DamageType.Magical, target.Health) <
                                         (newtarget.Health -
                                         ObjectManager.Player.CalcDamage(
-                                            newtarget, Damage.DamageType.Magical, newtarget.Health));
+                                            newtarget, Damage.DamageType.Magical, newtarget.Health))))
                                     {
                                         newtarget = target;
                                     }
