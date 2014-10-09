@@ -77,9 +77,7 @@ namespace Mechanics
                 case "Kennen":
                     Champion = new Kennen();
                     break;
-                case "Riven":
-                    Champion = new Riven();
-                    break;
+
             }
 
 
