@@ -1,0 +1,10 @@
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\Orianna.exe.config
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\Orianna.exe
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\Orianna.pdb
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\LeagueSharp.Common.dll
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\LeagueSharp.dll
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\SharpDX.dll
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\SharpDX.Direct3D9.dll
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\bin\Release\LeagueSharp.xml
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\obj\Release\Orianna.exe
+C:\Users\MrMLyra\Downloads\Binaries\Repositories\42AAE87C\trunk\Orianna\Orianna\obj\Release\Orianna.pdb
