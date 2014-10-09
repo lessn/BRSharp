@@ -69,7 +69,6 @@
     <Compile Include="Champions\Kogmaw.cs" />
     <Compile Include="Champions\Lucian.cs" />
     <Compile Include="Champions\Quinn.cs" />
-    <Compile Include="Champions\Riven.cs" />
     <Compile Include="Champions\Sivir.cs" />
     <Compile Include="Champions\Teemo.cs" />
     <Compile Include="Champions\Twitch.cs" />
