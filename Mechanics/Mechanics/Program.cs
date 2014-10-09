@@ -134,7 +134,7 @@ namespace Mechanics
             Champion.Drawing_OnDraw(args);
             return;
 
-            var y = 10;
+            var y = 1;
 
             foreach (
                 var t in
