@@ -205,7 +205,7 @@ namespace Mechanics
                                         ObjectManager.Player.CalcDamage(target, Damage.DamageType.Physical, target.Health) <
                                         (newtarget.Health -
                                         ObjectManager.Player.CalcDamage(
-                                            newtarget, Damage.DamageType.Physical, newtarget.Health))
+                                            newtarget, Damage.DamageType.Physical, newtarget.Health))))
                                 {
                                       newtarget = target;
                                 }
@@ -214,7 +214,7 @@ namespace Mechanics
                                     ObjectManager.Player.CalcDamage(target, Damage.DamageType.Magical, target.Health) <
                                         (newtarget.Health -
                                         ObjectManager.Player.CalcDamage(
-                                            newtarget, Damage.DamageType.Magical, newtarget.Health))
+                                            newtarget, Damage.DamageType.Magical, newtarget.Health));
                                     {
                                         newtarget = target;
                                     }
