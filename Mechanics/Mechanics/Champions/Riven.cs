@@ -236,7 +236,7 @@ namespace Mechanics
                 var po = R.GetPrediction(targ, true);
                 if (po.Hitchance != HitChance.High)
                     return;
-                if (ObjectManager.Player.GetSpellDamage(SpellSlot.R) > ((targ.Health + target.ScriptHealthBonus) - 5 * targ.Level) && R.IsReady())
+                if (Player.GetSpellDamage(target, SpellSlot.R) > ((targ.Health + target.ScriptHealthBonus) - 5 * targ.Level) && R.IsReady())
                     R.Cast(po.CastPosition);
             }
 
@@ -368,7 +368,7 @@ namespace Mechanics
                     return;
                 if (!target.IsValidTarget(R.Range) || R.GetPrediction(target).Hitchance < HitChance.High)
                     return;
-                if (ObjectManager.Player.GetSpellDamage(SpellSlot.R) >= target.Health || Environment.TickCount - RTick >= 13000 || !target.IsValidTarget(R.Range - 400))
+                if (Player.GetSpellDamage(target, SpellSlot.R) >= target.Health || Environment.TickCount - RTick >= 13000 || !target.IsValidTarget(R.Range - 400))
                     R.Cast(target, Packets());
             }
         }
