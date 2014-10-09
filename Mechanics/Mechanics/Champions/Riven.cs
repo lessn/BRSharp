@@ -232,10 +232,10 @@ namespace Mechanics
                 R.Cast();
             else if (target is Obj_AI_Hero)
             {
+                Game.PrintChat("shield?: "+target.ScriptHealthBonus);
                 var targ = target as Obj_AI_Hero;
                 PredictionOutput po = R.GetPrediction(targ, true);
                 if (po.Hitchance != HitChance.High)
-                    return;
                 if (Player.GetSpellDamage(target, SpellSlot.R) > ((targ.Health + target.ScriptHealthBonus)) && R.IsReady())
                     R.Cast(po.CastPosition);
             }
