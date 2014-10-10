@@ -144,7 +144,7 @@ namespace Mechanics
                 }
             }
 
-            if (GetValue<bool>("SwapQ") && FishBoneActive &&
+            if (GetValue<void>("SwapQ") && FishBoneActive &&
                 (LaneClearActive ||
                  (HarassActive && SimpleTs.GetTarget(675f + QAddRange, SimpleTs.DamageType.Physical) == null)))
             {
@@ -156,7 +156,7 @@ namespace Mechanics
                 return;
             }
 
-            var useQ = GetValue<bool>("UseQ" + (ComboActive ? "C" : "H"));
+            var useQ = GetValue<void>("UseQ" + (ComboActive ? "C" : "H"));
             var useW = GetValue<bool>("UseW" + (ComboActive ? "C" : "H"));
             var useR = GetValue<bool>("UseRC");
 
@@ -180,7 +180,7 @@ namespace Mechanics
                     ObjectManager.Get<Obj_AI_Hero>()
                         .Where(t => t.IsValidTarget(GetRealPowPowRange(t) + QAddRange + 20f)))
                 {
-                    var swapDistance = GetValue<bool>("SwapDistance");
+                    var swapDistance = GetValue<void>("SwapDistance");
                     var swapAoe = GetValue<bool>("SwapAOE");
                     var distance = GetRealDistance(t);
                     var powPowRange = GetRealPowPowRange(t);
