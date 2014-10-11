@@ -39,7 +39,7 @@ namespace Mechanics
 
         private static bool FishBoneActive
         {
-            get { return Math.Abs(ObjectManager.Player.AttackRange - 565f); }
+            get { return ObjectManager.Player.AttackRange > 565f; }
         }
 
         private static int PowPowStacks
