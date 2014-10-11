@@ -22,7 +22,7 @@ namespace Mechanics
         {
             MecanicaUtil.PrintMessage("Jinx by [Credits in Github] loaded.", MecanicaUtil.HexColor.AliceBlue);
 
-            Q = new Spell(SpellSlot.Q, float.MaxValue);
+            Q = new Spell(SpellSlot.Q);
             W = new Spell(SpellSlot.W, 1500f);
             E = new Spell(SpellSlot.E, 900f);
             R = new Spell(SpellSlot.R, 25000f);
@@ -39,7 +39,7 @@ namespace Mechanics
 
         private static bool FishBoneActive
         {
-            get { return Math.Abs(ObjectManager.Player.AttackRange - 525f) > float.Epsilon; }
+            get { return Math.Abs(ObjectManager.Player.AttackRange - 565f); }
         }
 
         private static int PowPowStacks
@@ -234,7 +234,7 @@ namespace Mechanics
                             if (R.Cast(t, false, true) == Spell.CastStates.SuccessfullyCasted) { }
                         }
                     }
-                    else if (checkRok && distance > minR)
+                    else if (distance > minR)
                     {
                         var aDamage = ObjectManager.Player.GetAutoAttackDamage(t);
                         var wDamage = ObjectManager.Player.GetSpellDamage(t, SpellSlot.W);
